@@ -2,7 +2,7 @@
 
 A Google Workspace-based workforce reporting solution developed for a real client to replace manual, message-based work reporting with structured digital submissions, centralised records, automated administration, and interactive dashboards.
 
-> **Portfolio edition:** This repository is intended for a privacy-safe technical showcase. It excludes live client records, private links, credentials, and identifying information. Source code will be added after client permission and sanitisation.
+> **Portfolio edition:** This repository is intended for a privacy-safe technical showcase. It excludes live client records, private links, credentials, and identifying information. Two sanitised Apps Script source files are included. Publication still requires confirmation of client permission.
 
 ## Project overview
 
@@ -47,14 +47,24 @@ I designed and implemented the workflow and reporting prototype, including the G
 workforce-reporting-analytics-system/
 ├── README.md
 ├── .gitignore
-├── src/                  # Sanitised Google Apps Script source files
+├── src/                  # ReportingSync.gs and DirectoryManagement.gs
 ├── docs/
 │   ├── architecture.md
 │   ├── setup.md
+│   ├── code-guide.md
 │   └── data-dictionary.md
 ├── screenshots/          # Anonymised interface and dashboard images
 └── data/                 # Synthetic examples only
 ```
+
+## Apps Script implementation
+
+The repository includes two production-derived modules, with the live Google Form ID removed:
+
+- [`ReportingSync.gs`](src/ReportingSync.gs): Maintains persistent job IDs, expands checkbox selections into individual employee rows, and rebuilds the `Reporting Data` sheet used by dashboards.
+- [`DirectoryManagement.gs`](src/DirectoryManagement.gs): Automatically assigns employee/site IDs, enforces Active/Inactive status, synchronises Google Form choices, and handles registration requests.
+
+The form ID is supplied through the private `WORKFORCE_FORM_ID` Apps Script property in a demo installation. See the [source code guide](docs/code-guide.md) and [setup steps](docs/setup.md).
 
 ## Screenshots
 
@@ -76,8 +86,8 @@ This repository intentionally does not contain client-owned data or private acco
 
 ## Roadmap / ideas
 
-- Add tested and sanitised Apps Script source files.
-- Document automated sync behaviour and trigger configuration.
+- Test the included sanitised Apps Script source in a separate demo environment.
+- Verify the documented trigger configuration against a demo form and sheet.
 - Include anonymised dashboard screenshots and example reports.
 - Add a fully synthetic sample dataset and reproducible setup instructions.
 

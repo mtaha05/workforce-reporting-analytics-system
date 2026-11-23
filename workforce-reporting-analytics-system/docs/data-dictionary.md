@@ -1,16 +1,20 @@
 # Data dictionary (illustrative)
 
-The precise production spreadsheet schema must be confirmed against the latest live workbook before documenting it. The following is a **conceptual**, non-production model and should not be treated as a literal export.
+The Apps Script files confirm the following **expected column names** for the work-response and generated reporting tabs. This is code-derived schema documentation, not a production spreadsheet export.
 
 | Entity | Example field | Meaning |
 | --- | --- | --- |
-| Work record | Work date | Date on which the work occurred |
-| Work record | Employee | Employee reference used in work reporting |
-| Work record | Site | Site reference associated with the work |
-| Work record | Job description | Description of the work undertaken |
-| Work record | Job type | Category assigned to the work |
-| Employee | Active | Whether the employee is available in current workflows |
-| Site | Active | Whether the site is available in current workflows |
+| Work record | `Timestamp` | Form submission timestamp |
+| Work record | `Employee name` | One or more checkbox-selected employees (expanded to individual rows) |
+| Work record | `Date of Work` | Date on which the work occurred |
+| Work record | `Work Location/Site` | Work location associated with the record |
+| Work record | `Day Type` | Full-day or half-day information (legacy field label also supported) |
+| Work record | `Job type` | Category assigned to the work |
+| Work record | `Job Description` | Description of the work undertaken |
+| Work record | `Job Record ID` | Stable shared ID for one source submission, including multiple employee rows |
+| Employee/Site directory | `ID` | Generated employee/site identifier |
+| Employee/Site directory | `Name` | Employee or site label |
+| Employee/Site directory | `Status` | Active/Inactive, controlling form choices |
 
 ## Reporting considerations
 
