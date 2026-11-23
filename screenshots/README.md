@@ -1,11 +1,9 @@
 # Screenshots
 
-Upload client-approved, privacy-safe images here. Suggested names:
+These screenshots preserve the **actual user interface layout**, but personal names, site locations, job details, record IDs and activity figures have been **replaced with made-up demonstration values**. They are illustrative portfolio examples, not actual operational records.
 
-- `dashboard-overview.png`
-- `site-filter-report.png`
-- `employee-admin.png`
-- `work-submission-form.png`
-- `portal-overview.png`
+- `dashboard-overview.png`: Looker Studio overview with illustrative totals and synthetic records.
+- `reporting-data-demo.png`: Google Sheets data structure with synthetic rows and demo job IDs.
+- `work-submission-form.png`: Google Forms checkbox UI with fictional employee labels.
 
-Use synthetic data or completely anonymise every name, job description and private URL before adding images.
+Do not re-upload the original client screenshots. Publishing any client-owned design, workflow or source code still requires appropriate client permission.

@@ -66,15 +66,29 @@ The repository includes two production-derived modules, with the live Google For
 
 The form ID is supplied through the private `WORKFORCE_FORM_ID` Apps Script property in a demo installation. See the [source code guide](docs/code-guide.md) and [setup steps](docs/setup.md).
 
-## Screenshots
+## System walkthrough
 
-Add anonymised screenshots to `screenshots/` and reference them here once approved for sharing:
+The images below show the actual form, spreadsheet and dashboard layouts. **Employee names, locations, work descriptions, record IDs, dates, and dashboard figures shown within the images have been replaced with illustrative data** to protect the client's operations. The images do **not** document actual activity volumes.
 
-- Employee work submission form
-- Data management spreadsheet (sample or masked records only)
-- Reporting dashboard overview
-- Site or employee filtered dashboard
-- Google Sites portal (without private URLs)
+### 1. Dashboard: interactive workforce reporting
+
+![Looker Studio workforce dashboard, with illustrative figures and anonymised records](screenshots/dashboard-overview.png)
+
+The Looker Studio dashboard offers employee, date-range and site filters; scorecards summarise work activity; and the record table supports checking daily entries.
+
+### 2. Structured spreadsheet records
+
+![Google Sheets work records, with synthetic sample entries replacing client data](screenshots/reporting-data-demo.png)
+
+The Google Sheets structure records timestamps, employees, work dates, sites, full/half-day classification, job types, descriptions and persistent record IDs. Multi-employee submissions can expand into one reporting row per person.
+
+### 3. Work submission form
+
+![Google Form employee work submission, with fictional employee labels](screenshots/work-submission-form.png)
+
+Employees can select multiple people on a single Google Form submission. Apps Script maintains the available employee and site choices from the active records in the master spreadsheet.
+
+For architecture, setup and source code details, see the [technical documentation](docs/architecture.md) and [code guide](docs/code-guide.md).
 
 ## Implementation and reproducibility
 
@@ -88,7 +102,7 @@ This repository intentionally does not contain client-owned data or private acco
 
 - Test the included sanitised Apps Script source in a separate demo environment.
 - Verify the documented trigger configuration against a demo form and sheet.
-- Include anonymised dashboard screenshots and example reports.
+- Add additional client-approved anonymised views of the portal and filtered reports.
 - Add a fully synthetic sample dataset and reproducible setup instructions.
 
 ---
