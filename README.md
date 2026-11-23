@@ -37,6 +37,14 @@ flowchart TD
 
 At the last recorded snapshot, the system covered **13 employees**, **6 sites**, and **101 work records**. These figures document the project at that point in time and are not live statistics.
 
+## Project Impact
+
+- **Digitised workforce reporting:** Replaced WhatsApp-based reporting with a structured Google Forms and Sheets workflow, improving the organisation and accessibility of work records.
+- **Automated administration:** Developed Google Apps Script workflows to manage employee and site records, generate unique IDs, and synchronise active employees and sites with Google Forms.
+- **Improved reporting visibility:** Created interactive Looker Studio dashboards enabling management to filter and analyse workforce activity by employee, site, and date.
+- **Supported real business operations:** At the last documented snapshot, the system supported **13 employees, 6 sites, and 101 work records**.
+- **Reduced manual processing:** Automated reporting data preparation, including converting multi-employee submissions into individual reporting records.
+
 ## My role
 
 I designed and implemented the workflow and reporting prototype, including the Google Forms-to-Sheets data capture process, Apps Script administration and automation, and Looker Studio reporting.
